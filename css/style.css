@@ -1,0 +1,10 @@
+/*Header*/
+
+#mainheading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 2px #0B6E4F; /*Text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
+    background-color: #85CB33;
+    text-align: center;
+    padding: 60px 0px;
+}
