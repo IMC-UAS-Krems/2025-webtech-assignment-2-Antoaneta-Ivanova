@@ -50,3 +50,17 @@ function checkOut(){
 }
 
 checkoutbutton.addEventListener("click", checkOut)
+
+
+/*Place Order Button*/
+
+let placeorderbutton = document.getElementById("placeorderbtn")
+
+function placeorderBtn(){
+    document.getElementById("shoppingsection").style.display = "none";
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("buyerinformation").style.display = "none";
+    document.getElementById("confirmationpage").classList.remove("hide");
+}
+
+placeorderbutton.addEventListener("click", placeorderBtn)
