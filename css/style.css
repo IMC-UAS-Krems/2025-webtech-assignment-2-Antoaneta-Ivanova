@@ -1,10 +1,73 @@
 /*Header*/
 
+.topnavigation {
+    background-color: #D5DDE2;
+}
+#logo{
+    display: inline;
+    width: 10%;
+}
 #mainheading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
     color: white;
     text-shadow: 2px 2px #0B6E4F; /*Text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
     background-color: #85CB33;
     text-align: center;
     padding: 60px 0px;
 }
+
+/*Introduction*/
+.intro{
+    text-align: center;
+    padding: 30px 0px;
+}
+.introheading{
+    color:#0B6E4F;
+    text-shadow: 1px 1px greenyellow;
+    border-bottom: solid 2px #0B6E4F;
+    padding-bottom: 12px;
+}
+#introtext {
+    font-family: Cambria, serif;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+/*Products*/
+
+.subheading {
+    color:#0B6E4F;
+    text-shadow: 1px 1px greenyellow;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: #85CB33;
+    padding: 20px;
+}
+.footertext {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.footernavigation {
+    background-color: #85CB33;
+    padding-top: 10px;
+}
+.socialmedia span, .socialmedia a, .contact span {
+    display: block;
+    padding: 5px 0px;
+}
+.socialmedia a, #contact {
+    text-decoration: none;
+    color: white;
+}
+.socialmedia a:hover {
+    color:blue;
+}
+
+
