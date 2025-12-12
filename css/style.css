@@ -17,8 +17,13 @@
     padding: 60px 0px;
 }
 
+/*Hidden*/
+
+.hide {
+    display: none;
+}
 /*Introduction*/
-.intro{
+#intro{
     text-align: center;
     padding: 30px 0px;
 }
@@ -35,6 +40,7 @@
 }
 
 
+
 /*Cart Information*/
 
 .subheading {
@@ -49,7 +55,14 @@
 /*Products*/
 
 
+/*Buyer Information*/
 
+
+.buyerinfo, .shippinginfo{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
 
 /*Footer*/
 
