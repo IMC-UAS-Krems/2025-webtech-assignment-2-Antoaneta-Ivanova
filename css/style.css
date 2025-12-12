@@ -34,7 +34,8 @@
     padding-top: 20px;
 }
 
-/*Products*/
+
+/*Cart Information*/
 
 .subheading {
     color:#0B6E4F;
@@ -42,6 +43,12 @@
     text-align: center;
     padding-bottom: 20px;
 }
+#cartinfo span{
+    font-size: 20px;
+}
+/*Products*/
+
+
 
 
 /*Footer*/
