@@ -47,10 +47,10 @@
 
     <main>
 
-        <section class="intro">
+        <section id="intro">
             <div class="container">
-                <h4 class="introheading">Our Mission</h4>
-                <p class="introtext">"Our mission in <b>GrowFuture Organisation</b> is to help plant seeds in community
+                <h4 id="introheading">Our Mission</h4>
+                <p id="introtext">"Our mission in <b>GrowFuture Organisation</b> is to help plant seeds in community
                     spaces.
                     We grow biodiversity in parks, schools, and public gardens. Help us grow our future by purchasing
                     our high-quality,
@@ -364,21 +364,31 @@
             </form>
         </section>
 
-        <section id="confirmationpage">
+        <section id="confirmationpage" class = "hide">
             <div class="container-fluid">
                 <div class="row">
-                    <h2 class = "subheading">Thank you for your Purchase!</h2>
+                    <h2 class="subheading">Thank you for your Purchase!</h2>
                 </div>
                 <div class="row">
-                    <span style="text-align: center;">💚</span>
-                </div>
-                <div class="row">
-                    <p class="introtext">Your purchase will fund our projects that protect native plants and support local wildlife in our
-                        community. <br>Now you also play a part in the collective effort to grow a green future and homes for local
+                    <p class="introtext">Your purchase will fund our projects that <b>protect native plants</b> and <b>support
+                        local wildlife</b> in our
+                        community. <br>Now <b>YOU</b> also play a part in the collective effort to grow a green future and
+                        homes for local
                         wildlife.</p>
                 </div>
-                <h2>Purchase Summary:</h2>
-                <h2>Purchase Summary</h2>
+                <div class="row">
+                    <span style="text-align: center; font-size: 50px;">💚</span>
+                </div>
+                <div class="row">
+                    <h2 class="subheading" style="text-align: left;">Purchase Summary:</h2>
+                <div class="row ps-5">
+                    <ul id = "summary" class="list-group">
+                    </ul>
+                </div>
+
+                    </p>
+                </div>
+
             </div>
         </section>
 

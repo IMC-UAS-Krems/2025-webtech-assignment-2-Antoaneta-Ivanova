@@ -79,4 +79,34 @@ function confirmationPage(){
     document.getElementById("intro").style.display = "none";
     document.getElementById("buyerinformation").style.display = "none";
     document.getElementById("confirmationpage").classList.remove("hide");
+    
+    summaryCart();
 }
+
+
+
+
+
+/*Confirmation page*/
+
+
+let listsummary = document.getElementById("summary");
+
+function summaryCart(){
+    console.log(cart);
+    console.log(cart.length);
+
+    listsummary.innerHTML = "";
+
+    for (let item of cart){
+        let point = document.createElement("li");
+        point.innerText = `${item.name}: €${item.price}`;
+        listsummary.appendChild(point)
+    }
+}
+
+
+
+
+
+

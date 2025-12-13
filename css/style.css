@@ -22,18 +22,19 @@
 .hide {
     display: none;
 }
-/*Introduction*/
-.intro{
+
+/*Intro*/
+#intro{
     text-align: center;
     padding: 30px 0px;
 }
-.introheading{
+#introheading{
     color:#0B6E4F;
     text-shadow: 1px 1px greenyellow;
     border-bottom: solid 2px #0B6E4F;
     padding-bottom: 12px;
 }
-.introtext {
+#introtext {
     font-family: Cambria, serif;
     font-size: 18px;
     padding-top: 20px;
