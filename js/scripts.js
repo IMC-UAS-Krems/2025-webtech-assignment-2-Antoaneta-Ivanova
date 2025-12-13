@@ -52,15 +52,31 @@ function checkOut(){
 checkoutbutton.addEventListener("click", checkOut)
 
 
-/*Place Order Button*/
 
-let placeorderbutton = document.getElementById("placeorderbtn")
+/*Buyer/Shipping Form*/
+    /*References:
+    validity:           https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/checkValidity
+    submiting forms:    https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+    prevent default:    https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault */
 
-function placeorderBtn(){
+
+let form = document.getElementById("buyerform")
+form.addEventListener("submit", submitBuyerForm)
+
+function submitBuyerForm(event){
+    let validity = form.checkValidity()
+
+    if (!validity) {
+        return
+    }
+    
+    event.preventDefault();
+    confirmationPage();
+}
+
+function confirmationPage(){
     document.getElementById("shoppingsection").style.display = "none";
     document.getElementById("intro").style.display = "none";
     document.getElementById("buyerinformation").style.display = "none";
     document.getElementById("confirmationpage").classList.remove("hide");
 }
-
-placeorderbutton.addEventListener("click", placeorderBtn)

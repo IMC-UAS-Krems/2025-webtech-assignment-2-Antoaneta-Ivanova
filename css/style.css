@@ -23,7 +23,7 @@
     display: none;
 }
 /*Introduction*/
-#intro{
+.intro{
     text-align: center;
     padding: 30px 0px;
 }
@@ -33,10 +33,11 @@
     border-bottom: solid 2px #0B6E4F;
     padding-bottom: 12px;
 }
-#introtext {
+.introtext {
     font-family: Cambria, serif;
     font-size: 18px;
     padding-top: 20px;
+    text-align: center;
 }
 
 
@@ -54,6 +55,22 @@
 }
 /*Products*/
 
+/*All Buttons*/
+.addtocartbtn, #resetbtn, #checkoutbtn, #placeorderbtn {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid 2px #0B6E4F;
+    border-radius: 5px;
+    background-color: #badf90;
+    color: #0B6E4F;
+    text-shadow: 2px 2px yellowgreen;
+    padding: 5px 20px;
+}
+#placeorderbtn{
+    justify-content: center;
+}
+
 
 /*Buyer Information*/
 
@@ -64,6 +81,10 @@
     padding: 30px 0px;
     color: #0B6E4F;
     text-shadow: 1px 1px #85CB33;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-decoration: underline;
 }
 .buyerinfo, .shippinginfo{
   display: flex;

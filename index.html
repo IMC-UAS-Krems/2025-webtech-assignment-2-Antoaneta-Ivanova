@@ -47,10 +47,10 @@
 
     <main>
 
-        <section id="intro">
+        <section class="intro">
             <div class="container">
                 <h4 class="introheading">Our Mission</h4>
-                <p id="introtext">"Our mission in <b>GrowFuture Organisation</b> is to help plant seeds in community
+                <p class="introtext">"Our mission in <b>GrowFuture Organisation</b> is to help plant seeds in community
                     spaces.
                     We grow biodiversity in parks, schools, and public gardens. Help us grow our future by purchasing
                     our high-quality,
@@ -90,7 +90,7 @@
                                 </p>
                                 <p class="fw-bold">€5</p>
 
-                                <button class="addtocartbtn" data-name="Sunflower Seeds" data-price="5">Add to
+                                <button class="addtocartbtn" data-name="Sunflower Seeds" data-price="5">🛍️ Add to
                                     Cart</button>
 
                             </div>
@@ -282,29 +282,33 @@
 
             <h1 id="headingpage2">Buyer & Shipping Information</h1>
 
-            <form action="">
+            <form id="buyerform" action="">
                 <div class="container-fluid">
                     <h2 class="subheadingpage2">Buyer Information</h2>
 
-                    <div class="row">
-                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">Firstname:</label>
-                            <input type="text" placeholder="Enter your firstname">
+                    <div class="row justify-content-center">
+                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="firstName">Firstname:</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                placeholder="Enter your firstname..." class="form-control" required>
                         </div>
-                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">Surname:</label>
-                            <input type="text" placeholder="Enter your surname">
+                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="surname">Surname:</label>
+                            <input type="text" class="form-control" id="surname" name="surname"
+                                placeholder="Enter your surname..." required>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">Email adress:</label>
-                            <input type="email" placeholder="Enter your email-address">
+                    <div class="row justify-content-center">
+                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email-address..." required>
                         </div>
-                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">Phone number:</label>
-                            <input type="text" placeholder="Enter your phone number">
+                        <div class="buyerinfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="phoneNumber">Phone number:</label>
+                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber"
+                                placeholder="Enter your phone number..." required>
                         </div>
                     </div>
 
@@ -314,41 +318,68 @@
 
                     <h2 class="subheadingpage2">Shipping Address</h2>
 
-                    <div class="row">
-                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">Street Number:</label>
-                            <input type="text" placeholder="Enter your street number">
+                    <div class="row justify-content-center">
+                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="streetAddress">Street Address:</label>
+                            <input type="text" class="streetAddress" id="streetAddress" name="streetAddress"
+                                placeholder="Enter your street address..." required>
                         </div>
-                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">House Number:</label>
-                            <input type="text" placeholder="Enter your house number">
+                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="houseNumber">House Number:</label>
+                            <input type="text" class="form-control" id="houseNumber" name="houseNumber"
+                                placeholder="Enter your house number..." required>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">City:</label>
-                            <input type="text" placeholder="Enter your city">
+                    <div class="row justify-content-center">
+                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="city">City:</label>
+                            <input type="text" class="form-control" id="city" name="city"
+                                placeholder="Enter your city..." required>
                         </div>
-                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">ZIP/Postal code:</label>
-                            <input type="text" placeholder="Enter your ZIP/Postal code">
+                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="postalCode">ZIP/Postal code:</label>
+                            <input type="text" class="form-control" id="postalCode" name="postalCode"
+                                placeholder="Enter your ZIP/Postal code..." required>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-6">
-                            <label for="">Country:</label>
-                            <input type="text" placeholder="Enter your country">
+                    <div class="row justify-content-center">
+                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="stateRegion">State/Region:</label>
+                            <input type="text" class="form-control" id="stateRegion" name="stateRegion"
+                                placeholder="Enter your state/region..." required>
+                        </div>
+                        <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
+                            <label for="country">Country:</label>
+                            <input type="text" class="form-control" id="country" name="country"
+                                placeholder="Enter your country..." required>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto mb-5 mt-5">
+                            <button type="submit" id="placeorderbtn">Place Order</button>
                         </div>
                     </div>
                 </div>
-                <button type="button" id="placeorderbtn">Place Order</button>
             </form>
         </section>
 
-        <section id="confirmationpage" class="hide">
-            <h2>Purchase Summary</h2>
-            <h2>Purchase Summary</h2>
+        <section id="confirmationpage">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2 class = "subheading">Thank you for your Purchase!</h2>
+                </div>
+                <div class="row">
+                    <span style="text-align: center;">💚</span>
+                </div>
+                <div class="row">
+                    <p class="introtext">Your purchase will fund our projects that protect native plants and support local wildlife in our
+                        community. <br>Now you also play a part in the collective effort to grow a green future and homes for local
+                        wildlife.</p>
+                </div>
+                <h2>Purchase Summary:</h2>
+                <h2>Purchase Summary</h2>
+            </div>
         </section>
 
     </main>
