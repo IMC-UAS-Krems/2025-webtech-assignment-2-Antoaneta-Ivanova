@@ -7,7 +7,7 @@ html {
 
 
 
-/*HOME PAGE---------------------------------------------------*/
+/*HOME PAGE--------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /*Header*/
@@ -30,20 +30,25 @@ html {
     background: linear-gradient(160deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); /*Gradient: https://cssgradient.io/*/
 }
 
+
+
 /*Hidden*/
 
 .hide {
     display: none;
 }
 
-/*Intro*/
+
+
+/*Introduction*/
+
 #intro{
     text-align: center;
     padding: 30px 0px;
 }
 #introheading, .subheading{
     color:#0B6E4F;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     font-weight: bold;
     text-shadow: 1px 2px greenyellow;
@@ -70,6 +75,7 @@ html {
 
 
 /*Buttons*/
+
 .addtocartbtn, #resetbtn, #checkoutbtn, #placeorderbtn,#backtotopbtn {
     font-weight: bold;
     font-size: 20px;
@@ -90,7 +96,7 @@ button:active{
 
 
 
-/*Buyer Information----------------------------------------------------------------------------*/
+/*Buyer Information------------------------------------------------------------------------------------------------------------------------*/
 
 #headingpage2{
     text-align: center;
@@ -120,14 +126,15 @@ input:focus{
     border: solid #0B6E4F 2px;
 
 }
-/*Footer*/
+
+/*Footer----------------------------------------------------------------------------------------------------------------------------------*/
 
 footer{
     background-color: #85CB33;
     padding: 20px;
 }
 .footertext {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
 .footernavigation {
@@ -145,5 +152,3 @@ footer{
 .socialmedia a:hover {
     color: #0B6E4F;
 }
-
-
