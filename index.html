@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="js/scripts.js" defer></script>
-
+    
 </head>
 
 <body>
 
     <header>
-        <nav class="headernavigation">
+        <nav class="headernavigation" id ="navigation">
             <div class="container-fluid">
                 <ul class="nav">
                     <li class="nav-item">
@@ -58,16 +58,14 @@
         <section id="intro">
             <div class="container">
                 <h4 id="introheading">Our Mission</h4>
-                <p id="introtext"><i>"Our mission in <b>GrowFuture Organisation</b> is to help plant seeds in community
-                        spaces. <br>We strengthen biodiversity in parks, schools, and public gardens. Help us grow our
-                        future by purchasing
-                        our high-quality,
-                        beginner-friendly and eco-friendly products that make you part of our mission to support plant
-                        growth, bees, butterflies,
-                        and local wildlife. <br>With every purchase, we are able to fund local nature and eco projects
-                        in order
-                        to make green spaces accessible for all. <span style=" color: #0dcc3d;"><br><b>What are you
-                                waiting for? Come grow with us!"</b></span></i></p>
+                <p id="introtext"><i>Our mission at <b>GrowFuture Foundation</b> is to support nature by planting seeds in community spaces.
+                    <b>Pollution and global warming</b> are increasingly harming our environment, and without proper care for plants and local wildlife, 
+                    future generations will suffer the consequences of today's neglect. We work to <b>strengthen biodiversity</b> in parks, schools, and 
+                    public gardens by encouraging <b>sustainable planting and environmental awareness</b>. By purchasing our high-quality, beginner-friendly, 
+                    and eco-friendly products, YOU become part of our mission to support plant growth, bees, butterflies, and local wildlife. <b>Every 
+                    purchase helps fund local environmental and nature projects</b>, allowing us to protect green spaces and further expand the growth 
+                    and conservation of our natural environment."
+                    <span style=" color:#0B6E4F;"><br><b>What are YOU waiting for? Come grow with US!</b></span></i></p>
             </div>
 
         </section>
@@ -76,7 +74,7 @@
         <section id="shoppingsection">
 
             <div class="container">
-                <h4 class="subheading">Our Products</h4>
+                <h4 class="subheading">Support Nature Through Our Products:</h4>
                 <div class="row" id="cartinfo">
                     <p>🛒 <b>Number of items in your Shopping Cart:</b> <span id="cartcount">0</span></p>
                     <p>💳 <b>Total amount: €</b> <span id="totalprice">0</span></p>
@@ -89,21 +87,16 @@
 
                     <div class="col-12 col-sm-6 col-md-4 mb-5">
                         <div class="card">
-
                             <img src="img/sunflower.jpg" class="card-img-top" alt="a picture of sunflowers">
-
                             <div class="card-body">
                                 <h5>Sunflower Seeds</h5>
-                                <p>Buy a pack of <b>20 sunflower seeds</b>! Brighten up your home.
-                                    Every purchase supports planting flowers in public green spaces.
-                                </p>
+                                <p>Buy a pack of <b>20 sunflower seeds</b>! <br>
+                                    Brighten up your home.
+                                    Every purchase supports planting flowers in public green spaces.</p>
                                 <p class="fw-bold">€5</p>
-
                                 <button class="addtocartbtn" data-name="Sunflower Seeds" data-price="5">🛍️ Add to
                                     Cart</button>
-
                             </div>
-
                         </div>
                     </div>
 
@@ -112,154 +105,116 @@
                             <img src="img/lavender.jpg" class="card-img-top" alt="a picture of lavender flowers">
                             <div class="card-body">
                                 <h5 class="card-title">Lavender Seeds</h5>
-                                <p class="card-text">Buy a pack of <b>20 lavender seeds</b>! Bring calm and fragrant
-                                    lavender to your home.
-                                    Every purchase supports planting flowers in public green spaces.
-                                </p>
+                                <p class="card-text">
+                                    Buy a pack of <b>20 lavender seeds</b>! <br>
+                                    Bring calm and fragrant lavender to your home.
+                                    Every purchase supports planting flowers in public green spaces.</p>
                                 <p class="card-text fw-bold">€7</p>
-                                <button class="addtocartbtn" data-name="Lavnder Seeds" data-price="7">Add to
+                                <button class="addtocartbtn" data-name="Lavender Seeds" data-price="7">🛍️ Add to
                                     Cart</button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-sm-6 col-md-4 mb-5">
                         <div class="card">
                             <img src="img/zinnia.jpeg" class="card-img-top" alt="a picture of zinnia flowers">
                             <div class="card-body">
                                 <h5 class="card-title">Zinnia Seeds</h5>
-                                <p class="card-text">Buy a pack of <b>20 zinnia seeds</b>! Bring bold and colours to
-                                    your home. Easiest to grow.
+                                <p class="card-text">
+                                    Buy a pack of <b>20 zinnia seeds</b>! <br>
+                                    Bring bold and colours to your home. Easiest to grow.
                                     Every purchase supports planting flowers in public green spaces.
                                 </p>
                                 <p class="card-text fw-bold">€6</p>
-                                <button class="addtocartbtn" data-name="Zinnia Seeds" data-price="6">Add to
+                                <button class="addtocartbtn" data-name="Zinnia Seeds" data-price="6">🛍️ Add to
                                     Cart</button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-sm-6 col-md-4 mb-5">
                         <div class="card">
-                            <img src="img/lemontree.jpg" class="card-img-top" alt="a picture of a lemon tree.">
+                            <img src="img/lemontree.jpg" class="card-img-top" alt="a picture of a lemon tree">
                             <div class="card-body">
                                 <h5 class="card-title">Lemon Tree Seeds</h5>
-                                <p class="card-text">Buy a pack of <b>20 lemon tree seeds</b>! Grow refreshing and
-                                    fragrant lemons at your home.
+                                <p class="card-text">
+                                    Buy a pack of <b>20 lemon tree seeds</b>! <br>
+                                    Grow refreshing and fragrant lemons at your home.
                                     Every purchase supports planting flowers in public green spaces.
                                 </p>
                                 <p class="card-text fw-bold">€6</p>
-                                <button class="addtocartbtn" data-name="Lemon Tree Seeds" data-price="6">Add to
+                                <button class="addtocartbtn" data-name="Lemon Tree Seeds" data-price="6">🛍️ Add to
                                     Cart</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-5">
-                        <div class="card">
-                            <img src="img/butterflygardenmix.jpg" class="card-img-top"
-                                alt="a picture of butterfly-friendly flower mix.">
-                            <div class="card-body">
-                                <h5 class="card-title">Butterfly Garden Mix (20g)</h5>
-                                <p class="card-text">Buy a 20g pack of <b>Butterfly Garden Mix</b>! Colourful mix of
-                                    flowers to attract butterflies.
-                                    Each purchase supports our community planting projects for a healthier environment
-                                    for local wildlife.
-                                </p>
-                                <p class="card-text fw-bold">€7</p>
-                                <button class="addtocartbtn" data-name="Butterfly Garden Mix" data-price="7">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-5">
-                        <div class="card">
-                            <img src="img/rosemary.jpg" class="card-img-top" alt="a picture of rosemary herbs.">
-                            <div class="card-body">
-                                <h5 class="card-title">Rosemary Seeds</h5>
-                                <p class="card-text">Buy a pack of <b>20 Rosemary Seeds</b>! Grow a herb in pots, on
-                                    your balcony or on your windowsills. Perfect for your cooking.
-                                    Every purchase supports planting flowers in public green spaces.
-                                </p>
-                                <p class="card-text fw-bold">€6</p>
-                                <button class="addtocartbtn" data-name="Rosemary Seeds" data-price="6">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-5">
-                        <div class="card">
-                            <img src="img/beeflowermix.jpg" class="card-img-top"
-                                alt="a picture of bee-friendly flower mix.">
-                            <div class="card-body">
-                                <h5 class="card-title">Bee-Friendly Flower Mix (20g)</h5>
-                                <p class="card-text">Buy a 20g pack of <b>Bee-Friendly Flower Mix</b>! Many colourful
-                                    flowers to support bees.
-                                    Each purchase supports our community planting projects for a healthier environment
-                                    for local wildlife.
-                                </p>
-                                <p class="card-text fw-bold">€7</p>
-                                <button class="addtocartbtn" data-name="Bee-Friendly Flower Mix" data-price="7">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-5">
-                        <div class="card">
-                            <img src="img/olive.jpg" class="card-img-top" alt="a picture of olive seeds.">
-                            <div class="card-body">
-                                <h5 class="card-title">Olive Tree Seeds</h5>
-                                <p class="card-text">Buy a pack of <b>20 Olive Tree Seeds</b>! Grow your own olive tree!
-                                    Bring a Mediterranean youch to your home.
-                                    Every purchase supports planting flowers in public green spaces.
-                                </p>
-                                <p class="card-text fw-bold">€8</p>
-                                <button class="addtocartbtn" data-name="Olive Tree Seeds" data-price="8">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-5">
-                        <div class="card">
-                            <img src="img/birdhouse.jpg" class="card-img-top" alt="a picture of a Wooden Bird House.">
-                            <div class="card-body">
-                                <h5 class="card-title">Wooden Bird House</h5>
-                                <p class="card-text">Buy a <b>Wooden Bird House</b>! Perfectly weather-resistant wooden
-                                    bird house supporting local bird populations.
-                                    Each purchase supports our community planting projects to create a healthier
-                                    environment for local wildlife.
-                                </p>
-                                <p class="card-text fw-bold">€10</p>
-                                <button class="addtocartbtn" data-name="Wooden Bird House" data-price="10">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-5">
-                        <div class="card">
-                            <img src="img/biodegradablepots.jpg" class="card-img-top"
-                                alt="a picture of biodegradable Starter Pots.">
-                            <div class="card-body">
-                                <h5 class="card-title">Biodegradable Starter Pots (x4)</h5>
-                                <p class="card-text">Buy 4 <b>Biodegradable Starter Pots</b>! A set of eco-friendly 4
-                                    pots. Perfect for starting seed growth at home.
-                                    Every purchase supports our community gardening and planting efforts.
-                                </p>
-                                <p class="card-text fw-bold">€7</p>
-                                <button class="addtocartbtn" data-name="Biodegradable Starter Pots" data-price="7">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-12 col-sm-6 col-md-4 mb-5">
                         <div class="card">
                             <img src="img/wateringcan.jpg" class="card-img-top"
                                 alt="a picture of a Recycled Small Watering Can">
                             <div class="card-body">
                                 <h5 class="card-title">Recycled Small Watering Can</h5>
-                                <p class="card-text">Buy a <b>Recycled Small Watering Can</b>! A watering made from
-                                    recycled materials, perfect for caring for indoor and outdoor plants.
-                                    Every purchase helps support our community gardening and environmental projects.
+                                <p class="card-text">Buy a <b>Recycled Small Watering Can</b>! <br>
+                                    Made from recycled materials. Care for your plants.
+                                    Every purchase helps support our community environmental projects.
                                 </p>
                                 <p class="card-text fw-bold">€8</p>
-                                <button class="addtocartbtn" data-name="Recycled Small Watering Can" data-price="8">Add
+                                <button class="addtocartbtn" data-name="Recycled Small Watering Can" data-price="8">🛍️
+                                    Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-5">
+                        <div class="card">
+                            <img src="img/butterflygardenmix.jpg" class="card-img-top"
+                                alt="a picture of butterfly-friendly flower mix.">
+                            <div class="card-body">
+                                <h5 class="card-title">Butterfly Garden Mix</h5>
+                                <p class="card-text">
+                                    Buy a 20g pack of <b>Butterfly Garden Mix</b>! <br>
+                                    Colourful mix of flowers to attract butterflies.
+                                    Each purchase supports projects for a healthier environment for local wildlife.
+                                </p>
+                                <p class="card-text fw-bold">€7</p>
+                                <button class="addtocartbtn" data-name="Butterfly Garden Mix" data-price="7">🛍️ Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-5">
+                        <div class="card">
+                            <img src="img/rosemary.jpg" class="card-img-top" alt="a picture of rosemary herbs.">
+                            <div class="card-body">
+                                <h5 class="card-title">Rosemary Seeds</h5>
+                                <p class="card-text">
+                                    Buy a pack of <b>20 Rosemary Seeds</b>! <br>
+                                    Grow a healthy herb in your garden. Perfect for your cooking.
+                                    Every purchase supports planting flowers in public green spaces.
+                                </p>
+                                <p class="card-text fw-bold">€6</p>
+                                <button class="addtocartbtn" data-name="Rosemary Seeds" data-price="6">🛍️ Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-5">
+                        <div class="card">
+                            <img src="img/beeflowermix.jpg" class="card-img-top"
+                                alt="a picture of bee-friendly flower mix">
+                            <div class="card-body">
+                                <h5 class="card-title">Bee-Friendly Flower Mix</h5>
+                                <p class="card-text">
+                                    Buy a 20g pack of <b>Bee-Friendly Flower Mix</b>! <br>
+                                    Many colourful flowers to support bees.
+                                    Each purchase supports projects for a healthier environment for local wildlife.
+                                </p>
+                                <p class="card-text fw-bold">€7</p>
+                                <button class="addtocartbtn" data-name="Bee-Friendly Flower Mix" data-price="7">🛍️ Add
                                     to Cart</button>
                             </div>
                         </div>
@@ -267,27 +222,81 @@
 
                     <div class="col-12 col-sm-6 col-md-4 mb-5">
                         <div class="card">
-                            <img src="img/woodenplantlabels.jpg" class="card-img-top"
-                                alt="a picture of Wooden Plant Labels">
+                            <img src="img/birdhouse.jpg" class="card-img-top" alt="a picture of a Wooden Bird House">
                             <div class="card-body">
-                                <h5 class="card-title">Wooden Plant Labels (x6)</h5>
-                                <p class="card-text">Buy 6 x <b>Wooden Plant Labels</b>! Eco-friendly wooden plant
-                                    labels, perfect for marking herbs, flowers, and seedlings. Biodegradable and helps
-                                    to garden organize.
-                                    Each purchase supports our community planting and planting projects.”
+                                <h5 class="card-title">Wooden Bird House</h5>
+                                <p class="card-text">
+                                    Buy a <b>Wooden Bird House</b>! <br>
+                                    Perfect for supporting local bird populations.
+                                    Each purchase supports projects to create a healthier environment for local
+                                    wildlife.
+                                </p>
+                                <p class="card-text fw-bold">€10</p>
+                                <button class="addtocartbtn" data-name="Wooden Bird House" data-price="10">🛍️ Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-5">
+                        <div class="card">
+                            <img src="img/olive.jpg" class="card-img-top" alt="a picture of an olive tree">
+                            <div class="card-body">
+                                <h5 class="card-title">Olive Tree Seeds</h5>
+                                <p class="card-text">
+                                    Buy a pack of <b>20 Olive Tree Seeds</b>! <br>
+                                    Bring a Mediterranean touch to your home.
+                                    Every purchase supports planting flowers in public green spaces.
+                                </p>
+                                <p class="card-text fw-bold">€8</p>
+                                <button class="addtocartbtn" data-name="Olive Tree Seeds" data-price="8">🛍️ Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-5">
+                        <div class="card">
+                            <img src="img/biodegradablepots.jpg" class="card-img-top"
+                                alt="a picture of biodegradable Starter Pots">
+                            <div class="card-body">
+                                <h5 class="card-title">Biodegradable Starter Pots</h5>
+                                <p class="card-text">
+                                    Buy 4-pack of <b>Biodegradable Starter Pots</b>! <br>
+                                    Eco-friendly pots, perfect for starting seed growth at home.
+                                    Every purchase supports our community gardening and planting efforts.
+                                </p>
+                                <p class="card-text fw-bold">€7</p>
+                                <button class="addtocartbtn" data-name="Biodegradable Starter Pots" data-price="7">🛍️ Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mb-5">
+                        <div class="card">
+                            <img src="img/plantlabels.jpg" class="card-img-top" alt="a picture of Wooden Plant Labels">
+                            <div class="card-body">
+                                <h5 class="card-title">Wooden Plant Labels</h5>
+                                <p class="card-text">Buy a pack of <b>6 Wooden Plant Labels</b>! <br>
+                                    Eco-friendly labels, perfect for organizing herbs, flowers, and seedlings.
+                                    Each purchase supports our planting projects.
                                 </p>
                                 <p class="card-text fw-bold">€3</p>
-                                <button class="addtocartbtn" data-name="Wooden Plant Labels" data-price="3">Add to
-                                    Cart</button>
+                                <button class="addtocartbtn" data-name="Wooden Plant Labels" data-price="3">🛍️ Add to Cart</button>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-3 mb-5">
+                        <a href="#shoppingsection"><button type="button" id="backtotopbtn">⬆️ Back to top ⬆️</button></a>
+                    </div>
+                </div>
+
             </div>
 
-            <button type="button" id="backtotopbtn">Back to top</button>
-            
         </section>
 
         <section id="buyerinformation" class="hide">
@@ -333,7 +342,7 @@
                     <div class="row justify-content-center">
                         <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
                             <label for="streetAddress">Street Address:</label>
-                            <input type="text" class="streetAddress" id="streetAddress" name="streetAddress"
+                            <input type="text" class="form-control id="streetAddress" name="streetAddress"
                                 placeholder="Enter your street address..." required>
                         </div>
                         <div class="shippinginfo col-12 col-sm-12 col-md-12 col-lg-4 ms-3">
@@ -388,7 +397,8 @@
                         community. <br>Now <b>YOU</b> also play a part in the collective effort to grow a green future
                         and
                         homes for local
-                        wildlife.</p>
+                        wildlife.
+                    </p>
                 </div>
                 <div class="row">
                     <span style="text-align: center; font-size: 50px;">💚</span>
@@ -425,7 +435,8 @@
             </div>
         </div>
         <span>© 2024 GrowFuture Foundation. All rights reserved.</span>
-        <nav class="footernavigation">
+
+        <nav class="footernavigation" id="footnav">
             <div class="container-fluid">
                 <ul class="nav">
                     <li class="nav-item">
@@ -435,10 +446,13 @@
                         </a>
                     </li>
                     <li class="nav-item nav-underline">
-                        <a class="nav-link text-dark fs-5 p-3" href="#introheading">Home</a>
+                        <a class="nav-link text-dark fs-5 p-3" href="#introheading">🏠Home</a>
                     </li>
                     <li class="nav-item nav-underline">
-                        <a class="nav-link text-dark fs-5 p-3" href="#shoppingsection">Shop</a>
+                        <a class="nav-link text-dark fs-5 p-3" href="#introheading">🌱Mission</a>
+                    </li>
+                    <li class="nav-item nav-underline">
+                        <a class="nav-link text-dark fs-5 p-3" href="#shoppingsection">🛒Shop</a>
                     </li>
                 </ul>
             </div>

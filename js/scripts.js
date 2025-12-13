@@ -43,9 +43,15 @@ let checkoutbutton = document.getElementById("checkoutbtn")
 let information = document.getElementById("intro")
 
 function checkOut(){
+    if (cart.length === 0) {
+    alert("Please add at least one item to your shopping cart before checking out.");
+    return;
+    }
     document.getElementById("shoppingsection").style.display = "none";
     document.getElementById("intro").style.display = "none";
     document.getElementById("buyerinformation").classList.remove("hide");
+    document.getElementById("navigation").style.display = "none";
+    document.getElementById("footnav").style.display = "none";
 
 }
 

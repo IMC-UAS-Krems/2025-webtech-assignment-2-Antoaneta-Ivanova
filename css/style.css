@@ -68,9 +68,8 @@ html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/*Products*/
 
-/*All Buttons*/
+/*Buttons*/
 .addtocartbtn, #resetbtn, #checkoutbtn, #placeorderbtn,#backtotopbtn {
     font-weight: bold;
     font-size: 20px;
@@ -82,16 +81,13 @@ html {
     text-shadow: 2px 2px #85CB33;
     padding: 5px 20px;
 }
-button:hover{
+button:hover, #resetbtn:hover, #checkoutbtn:hover, #backtotopbtn:hover{
     background-color: #77be25;
 }
 button:active{
   box-shadow: 2px 2px grey;
+}
 
-}
-#placeorderbtn, #backtotopbtn{
-    justify-content: center;
-}
 
 
 /*Buyer Information----------------------------------------------------------------------------*/
@@ -147,7 +143,7 @@ footer{
     color: white;
 }
 .socialmedia a:hover {
-    color:blue;
+    color: #0B6E4F;
 }
 
 
