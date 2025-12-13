@@ -63,15 +63,15 @@ html {
 
 /*Cart Information*/
 
-
 #cartinfo, #cartinfo span{
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 /*Products*/
 
 /*All Buttons*/
-.addtocartbtn, #resetbtn, #checkoutbtn, #placeorderbtn {
+.addtocartbtn, #resetbtn, #checkoutbtn, #placeorderbtn,#backtotopbtn {
     font-weight: bold;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -79,15 +79,22 @@ html {
     border-radius: 5px;
     background-color: #badf90;
     color: #0B6E4F;
-    text-shadow: 2px 2px yellowgreen;
+    text-shadow: 2px 2px #85CB33;
     padding: 5px 20px;
 }
-#placeorderbtn{
+button:hover{
+    background-color: #77be25;
+}
+button:active{
+  box-shadow: 2px 2px grey;
+
+}
+#placeorderbtn, #backtotopbtn{
     justify-content: center;
 }
 
 
-/*Buyer Information*/
+/*Buyer Information----------------------------------------------------------------------------*/
 
 #headingpage2{
     text-align: center;
