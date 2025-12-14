@@ -42,10 +42,6 @@ html {
 
 /*Introduction*/
 
-#intro{
-    text-align: center;
-    padding: 30px 0px;
-}
 #introheading, .subheading{
     color:#0B6E4F;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -55,7 +51,7 @@ html {
     padding-bottom: 12px;
     text-align: center;
 }
-#introtext {
+#intro, #introtext, #thankyou{
     font-family: Cambria, serif;
     padding-top: 20px;
     text-align: center;

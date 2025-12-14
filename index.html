@@ -58,28 +58,21 @@
         <h1 id="mainheading" class="fs-1 fs-md-2 fs-lg-1">🌿 Grow Our Future 🌿</h1>
 
     </header>
-    <!--taxes,-->
-    <!---Documentation.pdf: Bootstrap components and functionality from Bootstrap you used and how your JavaScript code works.-->
-    <!--Web Accessibility: responsiveness-->
+    
     <main>
 
         <section id="intro">
             <div class="container">
-                <h4 id="introheading fs-1 fs-md-2 fs-lg-1">Our Mission</h4>
+                <h4 id="introheading fs-1 fs-md-2 fs-lg-1"><b>Our Mission</b></h4>
                 <p id="introtext" class="fs-5 fs-md-2 fs-lg-1">
                     <i>Our mission at <b>GrowFuture Foundation</b> is to support nature by planting seeds in community
-                        spaces.
-                        <b>Pollution and global warming</b> are increasingly harming our environment, and without proper
-                        care for plants and local wildlife,
-                        future generations will suffer the consequences of today's neglect. We work to <b>strengthen
-                            biodiversity</b> in parks, schools, and
-                        public gardens by encouraging <b>sustainable planting and environmental awareness</b>. By
-                        purchasing our high-quality, beginner-friendly,
+                        spaces. Pollution and global warming are increasingly harming our environment, and without proper
+                        care for plants and local wildlife, future generations will suffer the consequences of today's neglect. 
+                        We work to strengthen biodiversity in parks, schools, and public gardens by encouraging sustainable 
+                        planting and environmental awareness. By purchasing our high-quality, beginner-friendly,
                         and eco-friendly products, YOU become part of our mission to support plant growth, bees,
-                        butterflies, and local wildlife. <b>Every
-                            purchase helps fund local environmental and nature projects</b>, allowing us to protect
-                        green spaces and further expand the growth
-                        and conservation of our natural environment."
+                        butterflies, and local wildlife. <b>Every purchase helps fund local environmental and nature projects</b>, 
+                        allowing us to protect green spaces and further expand the growth and conservation of our natural environment."
                         <span style=" color:#0B6E4F;"><br><b>What are YOU waiting for? Come grow with US!</b></span></i>
                 </p>
             </div>
@@ -91,10 +84,12 @@
             <div class="container">
                 <h4 class="subheading fs-3 fs-md-2 fs-lg-1">Support Nature Through Our Products:</h4>
                 <div class="row" id="cartinfo">
-                    <p class="badge bg-success col-6 col-md-4 col-lg-3 fs-6 fs-md-2 fs-lg-1 p-2 m-2">🛒 <b>Shopping Cart:</b> <span id="cartcount">0</span></p>
+                    <p class="badge bg-success col-6 col-md-4 col-lg-3 fs-6 fs-md-2 fs-lg-1 p-2 m-2">🛒 <b>Shopping
+                            Cart:</b> <span id="cartcount">0</span></p>
                 </div>
                 <div class="row" id="cartinfo">
-                    <p class="badge bg-success col-6 col-md-4 col-lg-3 fs-6 fs-md-2 fs-lg-1 p-2 m-2">💳 <b>Total amount: €</b> <span id="totalprice">0</span></p>
+                    <p class="badge bg-success col-6 col-md-4 col-lg-3 fs-6 fs-md-2 fs-lg-1 p-2 m-2">💳 <b>Total amount:
+                            €</b> <span id="totalprice">0</span></p>
                 </div>
 
                 <button type="button" id="resetbtn" class="col-5 fs-6 col-md-3">🔄 Reset Cart</button>
@@ -408,15 +403,12 @@
         <section id="confirmationpage" class="hide">
             <div class="container-fluid">
                 <div class="row">
-                    <h2 class="subheading">Thank you for your Purchase!</h2>
+                    <h2 class="subheading pt-3">Thank you for your Purchase!</h2>
                 </div>
                 <div class="row">
-                    <p class="introtext">Your purchase will fund our projects that <b>protect native plants</b> and
-                        <b>support
-                            local wildlife</b> in our
-                        community. <br>Now <b>YOU</b> also play a part in the collective effort to grow a green future
-                        and
-                        homes for local
+                    <p class="fs-4 fs-md-3 " id="thankyou">
+                        Your purchase will fund our projects that <b>protect native plants</b> and <b>support local wildlife</b> in our
+                        community. <br>Now <b>YOU</b> also play a part in the collective effort to grow a green future and homes for local
                         wildlife.
                     </p>
                 </div>
@@ -424,14 +416,17 @@
                     <span style="text-align: center; font-size: 50px;">💚</span>
                 </div>
                 <div class="row">
-                    <h2 class="subheading" style="text-align: left;">Purchase Summary:</h2>
-                    <div class="row ps-5">
+                    <h2 class="subheading">Purchase Summary:</h2>
+                    <p class="ps-6 fs-5"><b>🛒 Cart Summary:</b></p>
+                    <div class="row ps-5 fs-5">
                         <ul id="summary" class="list-group">
                         </ul>
                     </div>
-                    <p>Subtotal:<span id="subtotal"> </span>€</p>
-                    <p>Discount:<span id="discount"> </span>€</p>
-                    <p>Total Cost:<span id="totalcost"> </span>€</p>
+                    <div class="ps-4 fs-5">
+                        <p><b>Subtotal:</b><span id="subtotal"> </span>€</p>
+                        <p><b>Discount:</b><span id="discount"> </span>€</p>
+                        <p><b>Total Cost:</b><span id="totalcost"> </span>€</p>
+                    </div>
                 </div>
 
             </div>
@@ -459,12 +454,12 @@
         <nav class="navbar footernavigation" id="footnav">
             <div class="container-fluid">
 
-                <a class="navbar-brand text-dark p-2 fw-bold fs-3 col-6" href="#navigation">
+                <a class="navbar-brand text-dark p-2 fw-bold fs-3" href="#navigation">
                     <img src="img/favicon.png" width="40" alt="logo of GrowFuture Foundation"><span
                         class="ps-3">GrowFuture Foundation</span>
                 </a>
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav flex-row ms-auto">
                     <li class="nav-item nav-underline">
                         <a class="nav-link text-dark fs-5 p-3" href="#introheading">🏠Home</a>
                     </li>
@@ -478,8 +473,10 @@
             </div>
         </nav>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>
