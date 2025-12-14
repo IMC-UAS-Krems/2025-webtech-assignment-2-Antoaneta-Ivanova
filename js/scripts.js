@@ -139,7 +139,8 @@ function calculateSubtotal(){
     for (let item of cart) {
     total += item.price;
     }
-    return total
+
+    return Math.round(total * 100) / 100;
 }
 
 function calculateDiscount(){
@@ -150,14 +151,14 @@ function calculateDiscount(){
     if (cart.length >= 3) {
         discount = 0.1 * subtotal;
     }
-    return discount;
+    return Math.round(discount * 100) / 100;;
 }
 
 function calculatetotalCost(){
     let subtotal = calculateSubtotal();
     let discount = calculateDiscount();
     let totalcost = subtotal - discount;
-    return totalcost
+    return Math.round(totalcost * 100) / 100;
 }
 
 
