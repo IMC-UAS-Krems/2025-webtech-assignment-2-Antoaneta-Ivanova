@@ -37,7 +37,7 @@ function resetCart() {
 resetbutton.addEventListener("click", resetCart)
 
 
-/*Check Out Button */
+/*Check Out Button-------------------------------------------------------------------------------------------------------------*/
 
 let checkoutbutton = document.getElementById("checkoutbtn")
 let information = document.getElementById("intro")
@@ -59,7 +59,8 @@ checkoutbutton.addEventListener("click", checkOut)
 
 
 
-/*Buyer/Shipping Form*/
+/*Buyer/Shipping Form------------------------------------------------------------------------------------------------------------*/
+
     /*References:
     validity:           https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/checkValidity
     submiting forms:    https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
@@ -67,18 +68,44 @@ checkoutbutton.addEventListener("click", checkOut)
 
 
 let form = document.getElementById("buyerform")
+
 form.addEventListener("submit", submitBuyerForm)
 
 function submitBuyerForm(event){
+    event.preventDefault();
     let validity = form.checkValidity()
 
     if (!validity) {
         return
     }
     
-    event.preventDefault();
+    if (validatePhoneNumber() == false) {
+        alert("Phone number must only include digits!");
+        return
+    }
+
     confirmationPage();
 }
+
+/*Function to check if the given phone number is valid)*/
+            /*Reference     (NaN()): https://uibakery.io/regex-library/numbers-only*/
+            /*Reference     trim(): https://stackoverflow.com/questions/10032024/how-can-i-remove-leading-and-trailing-rendered-as-white-spaces-from-a-given-html*/
+
+function validatePhoneNumber(){
+    let phone = document.getElementById("phoneNumber").value 
+    phone = phone.trim();
+    if (isNaN(phone)) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+
+
+
+/*Confirmation page-----------------------------------------------------------------------------------------------------------------*/
 
 function confirmationPage(){
     document.getElementById("shoppingsection").style.display = "none";
@@ -88,13 +115,6 @@ function confirmationPage(){
     
     summaryCart();
 }
-
-
-
-
-
-/*Confirmation page*/
-
 
 let listsummary = document.getElementById("summary");
 

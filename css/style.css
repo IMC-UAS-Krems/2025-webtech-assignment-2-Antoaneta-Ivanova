@@ -49,7 +49,6 @@ html {
 #introheading, .subheading{
     color:#0B6E4F;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
     font-weight: bold;
     text-shadow: 1px 2px greenyellow;
     border-bottom: solid 2px #0B6E4F;
@@ -58,8 +57,6 @@ html {
 }
 #introtext {
     font-family: Cambria, serif;
-    font-size: 20px;
-    line-height: 35px;
     padding-top: 20px;
     text-align: center;
 }
@@ -68,9 +65,8 @@ html {
 
 /*Cart Information*/
 
-#cartinfo, #cartinfo span{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#cartinfo{
+    font-family:'Times New Roman', Times, serif;
 }
 
 
@@ -78,7 +74,6 @@ html {
 
 .addtocartbtn, #resetbtn, #checkoutbtn, #placeorderbtn,#backtotopbtn {
     font-weight: bold;
-    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: solid 2px #0B6E4F;
     border-radius: 5px;
@@ -135,7 +130,6 @@ footer{
 }
 .footertext {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
 }
 .footernavigation {
     background-color: #85CB33;
@@ -143,7 +137,6 @@ footer{
 }
 .socialmedia span, .socialmedia a, .contact span {
     display: block;
-    padding: 5px 0px;
 }
 .socialmedia a, #contact {
     text-decoration: none;
