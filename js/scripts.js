@@ -1,7 +1,8 @@
 
 
 /*Add to Cart Buttons-----------------------------------------------------------------------------------------------------------------------*/
-/* */
+
+
 let cart = []
 
 let buttons = document.querySelectorAll(".addtocartbtn");
@@ -24,6 +25,9 @@ function addtoCart(event){
 for (let button of buttons){
     button.addEventListener("click", addtoCart)
 }
+/*Loops: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration*/ */
+
+
 
 
 /*Reset Cart Button-----------------------------------------------------------------------------------------------------------------------------*/
