@@ -1,5 +1,7 @@
-/*Add to Cart Buttons*/
 
+
+/*Add to Cart Buttons-----------------------------------------------------------------------------------------------------------------------*/
+/* */
 let cart = []
 
 let buttons = document.querySelectorAll(".addtocartbtn");
@@ -7,7 +9,8 @@ let buttons = document.querySelectorAll(".addtocartbtn");
 function addtoCart(event){
 
     let clickedBtn = event.target;
-    cart.push({name: clickedBtn.dataset.name, price: Number(clickedBtn.dataset.price)});
+
+    cart.push({name: clickedBtn.dataset.name, price: Number(clickedBtn.dataset.price)}); /* (HTML data-* global attribute) https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/data-* */
     document.getElementById("cartcount").innerText = cart.length;
     console.log(cart);
 
@@ -23,9 +26,10 @@ for (let button of buttons){
 }
 
 
-/*Reset Cart Button*/
+/*Reset Cart Button-----------------------------------------------------------------------------------------------------------------------------*/
 
-let resetbutton = document.querySelector("#resetbtn")
+let resetbutton = document.getElementById("resetbtn");
+
 
 function resetCart() {
     cart = [];
@@ -37,7 +41,8 @@ function resetCart() {
 resetbutton.addEventListener("click", resetCart)
 
 
-/*Check Out Button-------------------------------------------------------------------------------------------------------------*/
+
+/*Check Out Button---------------------------------------------------------------------------------------------------------------------*/
 
 let checkoutbutton = document.getElementById("checkoutbtn")
 let information = document.getElementById("intro")
@@ -61,7 +66,7 @@ checkoutbutton.addEventListener("click", checkOut)
 
 /*Buyer/Shipping Form------------------------------------------------------------------------------------------------------------*/
 
-    /*References:
+    /*References that helped me create my code:
     validity:           https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/checkValidity
     submiting forms:    https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
     prevent default:    https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault */
@@ -87,9 +92,13 @@ function submitBuyerForm(event){
     confirmationPage();
 }
 
-/*Function to check if the given phone number is valid)*/
-            /*Reference     (NaN()): https://uibakery.io/regex-library/numbers-only*/
-            /*Reference     trim(): https://stackoverflow.com/questions/10032024/how-can-i-remove-leading-and-trailing-rendered-as-white-spaces-from-a-given-html*/
+
+
+
+/*Function to check if the given phone number is valid)-------------------------------------------------------------------------------------------------------------------------*/    
+    
+    /*Reference in using (NaN()): https://uibakery.io/regex-library/numbers-only*/
+    /*Reference for using trim(): https://stackoverflow.com/questions/10032024/how-can-i-remove-leading-and-trailing-rendered-as-white-spaces-from-a-given-html*/
 
 function validatePhoneNumber(){
     let phone = document.getElementById("phoneNumber").value 
@@ -101,6 +110,8 @@ function validatePhoneNumber(){
         return true;
     }
 }
+
+
 
 
 
@@ -140,7 +151,7 @@ function calculateSubtotal(){
     total += item.price;
     }
 
-    return Math.round(total * 100) / 100;
+    return Math.round(total * 100) / 100; /*Math.round(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round */
 }
 
 function calculateDiscount(){
